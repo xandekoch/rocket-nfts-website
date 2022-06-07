@@ -288,8 +288,66 @@ ul {
 
 /* ============ POPULAR ============ */
 
-#popular {
-    background-color: red;
+#popular .wrapper {
+    padding-top: 15rem;
+}
+
+#popular .wrapper h2 {
+    font-size: 5rem;
+    line-height: 6.1rem;
+    color: white;
+
+    margin-bottom: 16rem;
+} 
+
+#popular .wrapper h2 span {
+    color: var(--color-logo);
+}
+
+#popular .wrapper .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5rem;
+    justify-content: space-between;
+}
+
+#popular .wrapper .cards .card {
+    width: fit-content;
+    place-items: center;
+}
+
+#popular .wrapper .cards .card h4 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+}
+
+#popular .wrapper .cards .card p {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--subtitle-color);
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2.6rem;
+}
+
+#popular .wrapper .cards .card p span {
+    font-weight: 400;
+    color: var(--color-logo);
+}
+
+#popular .wrapper .cards .card img {
+    width: 21vw;
 }
 
 /* ============ BEST ARTISTS ============ */
@@ -331,6 +389,7 @@ ul {
 
 #bestArtists .wrapper .cards .card img {
     width: 6.94vw;
+    display: inline;
 }
 
 #bestArtists .wrapper .cards .card p {
