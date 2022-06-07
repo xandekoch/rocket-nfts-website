@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* ============ GENERAL ============ */
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0E0E0E;
+
+}
+
+.wrapper {
+    width: 90vw;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============ HEADER ============ */
+#navigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding-block: 4rem;
+}
+
+#navigationBar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#navigationBar .wrapper ul {
+    display: flex;
+    gap: 6rem;
+}
+
+#navigationBar .wrapper ul a {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: white;
+}
+
+#navigationBar .wrapper .metamask-button {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    padding: 1rem 2rem;
+    background: white;
+    
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* ============ SCROLL ============ */
+
+#navigationBar.scroll {
+    background: var(--color-logo);
+    padding-block: 1rem;
+    z-index: 100;
+}
+
+#navigationBar.scroll #logo path[fill*="#FF5B50"] {
+    fill: white;
+}
+
+/* ============ HOME ============ */
+
+#home {
+    width: 100%;
+    height: 100rem;
+    padding-top: 15rem;
+    background: url(./assets/background.png);
+    background-size: cover;
+}
+
+#home .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+#home .wrapper .head {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+
+#home .wrapper .head .text-pics {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+}
+
+#home .wrapper .head .text-pics p {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+#home .wrapper .head .text-pics .pics {
+    position: relative;
+}
+
+#home .wrapper .head .text-pics .pics img {
+    width: 9.5rem;
+    position: absolute;
+}
+
+#home .wrapper .head .text-pics .pics img:nth-child(1) {
+    z-index: 5;
+}
+
+#home .wrapper .head .text-pics .pics img:nth-child(2) {
+    left: 2.6rem;
+    z-index: 4;
+}
+
+#home .wrapper .head .text-pics .pics img:nth-child(3) {
+    left: 5.2rem;
+    z-index: 3;
+}
+
+#home .wrapper .head .text-pics .pics img:nth-child(4) {
+    left: 7.8rem;
+    z-index: 2;
+}
+
+#home .wrapper .head .text-pics .pics h4 {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+#home .wrapper .head .text-pics .pics h4 span {
+    font-weight: 400;
+}
+
+#home .wrapper .head h1 {
+    font-size: 5rem;
+    line-height: 6.1rem;
+    color: white;
+}
+
+#home .wrapper .head h1 span {
+    color: var(--color-logo);
+}
+
+/* #home .wrapper .head svg {
+    
+} */
+
+#home .wrapper .content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    column-gap: 0; /* Não sei como deixa-los em space between */
+    row-gap: 6rem;
+}
+
+#home .wrapper .content img {
+    width: 21.3vw;
+    max-width: 30.7rem;
+}
+
+/* ============ INFO ============ */
+
+#info .wrapper {
+    width: 100%;
+    display: flex;
+
+    border-bottom: 1px solid #5A5757;;
+}
+
+#info .wrapper .data {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 8.2rem;
+    height: 66rem;
+
+    border-right: 1px solid #5A5757;
+}
+
+#info .wrapper .data h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 6.1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.8rem;
+    
+}
+
+#info .wrapper .data h3 span {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    
+    color: #5A5757;
+}
+
+#info .wrapper .texts-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#info .wrapper .texts-image .texts {
+    display: flex;
+    gap: 3rem;
+    margin-top: 7rem;
+    margin-inline: 6.7rem;
+}
+
+#info .wrapper .texts-image .texts p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    color: white;
+    }
+
+#info .wrapper .texts-image .texts p a{
+    color: var(--color-logo);
+    text-decoration: underline;
+}
+
+#info .wrapper .texts-image .texts a:nth-child(2) {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-decoration-line: underline;
+
+    color: white;
+
+    display: inline-block;
+    margin-top: 6.3rem;
+}
+
+#info .wrapper .texts-image img {
+    width: 100%
+}
+
+/* ============ POPULAR ============ */
+
+#popular {
+    background-color: red;
+}
+
+/* ============ BEST ARTISTS ============ */
+
+#bestArtists .wrapper {
+    padding-block: 15rem;
+}
+
+#bestArtists .wrapper h2 {
+    font-size: 5rem;
+    line-height: 6.1rem;
+    
+    color: white;
+
+    text-align: center;
+}
+
+#bestArtists .wrapper h2 span {
+    color: var(--color-logo);
+}
+
+#bestArtists .wrapper .cards {
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10rem;
+    column-gap: 7.7vw;
+    place-items: center;
+}
+
+#bestArtists .wrapper .cards .card {
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    gap: 2.77vw;
+    padding-block: 1.73vw;
+    padding-left: 2.22vw;
+}
+
+#bestArtists .wrapper .cards .card img {
+    width: 6.94vw;
+}
+
+#bestArtists .wrapper .cards .card p {
+    font-weight: 500;
+    font-size: 1.38vw;
+    line-height: 1.66vw;
+
+    color: white;
+
+    margin-right: 1.6vw;
+}
+
+#bestArtists .wrapper .cards .card p span {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-logo);
+}
+
+#bestArtists .wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+
+    color: white;
+    font-size: 2rem;
+    line-height: 2.4rem; 
+
+    margin-top: 5.4rem;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+/* ============ FOOTER ============ */
+
+footer {
+    background: var(--card-color);
+    display: grid;
+    grid-template-areas: 
+        'top top'
+        'mid-left mid-right'
+        'bottom bottom';
+
+    grid-template-columns: 55rem 1fr;
+}
+
+footer .top {
+    grid-area: top;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 8.4rem;
+    padding-block: 2rem;
+
+    border-bottom: 1px solid #5A5757;
+}
+
+footer .top a {
+    padding: 2.8rem;
+    background: var(--color-logo);
+}
+
+footer .mid-left {
+    grid-area: mid-left;
+    padding-left: 8.4rem;
+    /* padding-right: 6rem; */
+    border-right: 1px solid #5A5757;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;    
+}
+
+footer .mid-left p {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    color: white;
+    width: 35rem;
+}
+
+footer .mid-left p span {
+    color: var(--color-logo);
+}
+
+footer .mid-left .mail-bar {
+    display: flex;
+}
+
+footer .mid-left .mail-bar input {
+    padding: 2rem;
+    background: black;
+    width: 28rem;
+
+    color: white;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+footer .mid-left .mail-bar input::placeholder {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--subtitle-color);
+}
+
+footer .mid-left .mail-bar a {
+    padding: 2rem 2.5rem;
+    background: white;
+
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: black;
+}
+
+footer .mid-right {
+    grid-area: mid-right;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    padding-left: 3rem;
+
+    padding-right: 8.4rem;
+    padding-block: 4rem;
+}
+
+footer .mid-right div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer .mid-right div a {
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+footer .mid-right div a:nth-child(1) {
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .bottom {
+    grid-area: bottom;
+    border-top: 1px solid #5A5757;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 8.4rem;
+    padding-block: 4rem;
+}
+
+footer .bottom p {
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+footer .bottom .social-icons {
+    display: flex;
+    gap: 5rem;
+}
+
+footer .bottom .social-icons svg:hover path {
+    stroke: var(--color-logo);
+}
